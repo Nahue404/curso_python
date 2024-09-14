@@ -1,0 +1,19 @@
+Docker es una plataforma que permite crear, distribuir y 
+ejecutar aplicaciones en contenedores. Los contenedores son 
+una forma de virtualización a nivel de sistema operativo que 
+permite empaquetar una aplicación y sus dependencias de manera 
+que puedan ejecutarse en cualquier entorno. 
+
+Conceptos Básicos de Docker
+Imagen: Un archivo de solo lectura que contiene el código fuente, bibliotecas, dependencias, herramientas y otras instrucciones necesarias para ejecutar una aplicación.
+Contenedor: Una instancia en ejecución de una imagen. Es un entorno de ejecución aislado.
+Dockerfile: Un archivo de texto que contiene una serie de instrucciones para construir una imagen de Docker.
+Docker Hub: Un registro público donde los usuarios pueden publicar y compartir imágenes de Docker.
+
+Cuándo Usar Docker
+Docker es útil en una variedad de escenarios, incluyendo:
+
+Despliegue de aplicaciones en entornos de producción.
+Asegurar consistencia entre entornos de desarrollo, pruebas y producción.
+Facilitar la escalabilidad y la gestión de aplicaciones distribuidas.
+Simplificar la configuración y el despliegue de aplicaciones complejas con múltiples servicios.

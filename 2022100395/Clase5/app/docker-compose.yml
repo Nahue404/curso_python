@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: jaguarete
+      MYSQL_USER: unida
+      MYSQL_PASSWORD: unida123
+    volumes:
+      - C:/mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  python-app:
+    build:
+      context: ./app
+    container_name: python-app-container
+    volumes:
+      - C:\Users\Nahuel\Documents\Nahuel\1UNIVERSIDAD\1Python\python\Clase5\app
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mysql

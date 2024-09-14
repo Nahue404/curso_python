@@ -1,0 +1,6 @@
+Flask==2.0.2
+flask-swagger-ui
+Werkzeug==2.2.2
+pymysql==1.0.2
+mysql-connector-python==8.0.32
+flask-restx==0.5.1

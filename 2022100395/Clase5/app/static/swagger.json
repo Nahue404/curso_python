@@ -1,0 +1,66 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API de Login",
+        "Version": "1.0.0",
+        "title": "Login API"
+    },
+    "host": "localhost:5001",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/login": {
+            "post": {
+                "summary": "Login de usuario",
+                "description": "Servicio de login que verifica el usuario y contraseña",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Datos del usuario",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "user":{
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Login exitoso",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "codRes":{
+                                    "type": "string",
+                                    "example": "SIN_ERROR"
+                                },
+                                "menRes": {
+                                    "type": "string",
+                                    "example": "OK"
+                                },
+
+                                "usuario": {
+                                    "type": "string",
+                                    "example": "sortiz"
+                                },
+                                "accion": {
+                                    "type": "string",
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

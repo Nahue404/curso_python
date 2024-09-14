@@ -1,0 +1,8 @@
+Flask es un microframework web escrito en Python. 
+Está diseñado para ser sencillo y flexible, permitiendo a 
+los desarrolladores crear aplicaciones web rápidamente.
+ 
+Flask es una excelente opción para:
+Aplicaciones web pequeñas a medianas.
+Prototipos rápidos y proyectos que necesitan flexibilidad.
+Desarrolladores que prefieren tener control sobre los componentes de su aplicación.
