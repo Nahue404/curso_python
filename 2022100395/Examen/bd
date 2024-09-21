@@ -1,0 +1,12 @@
+CREATE DATABASE curso_python;
+
+USE curso_python;
+
+CREATE TABLE registros_autenticacion (
+    id INT AUTO_INCREMENT PRIMARY KEY,           
+    matricula VARCHAR(100) NOT NULL,             
+    url_visita TEXT NOT NULL,                    
+    fecha_hora DATETIME DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+SHOW TABLES;
